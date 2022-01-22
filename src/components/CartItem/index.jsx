@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import removeFromCart from '../../utils/removeFromCart';
-import cartProduct from '../../utils/cartProduct';
 
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
@@ -14,26 +13,39 @@ import './styles.scss';
 
 function CartItem() {
   const [cart, setCart] = useState([]);
+  const [cost, setCost] = useState(0);
 
-  function updateCart() {
-    let cartProduct = [];
+  const updateCart = () => {
+    let cartItems = [];
     if (localStorage.hasOwnProperty('cartProducts')) {
-      cartProduct = JSON.parse(localStorage.getItem('cartProducts'));
+      cartItems = JSON.parse(localStorage.getItem('cartProducts'));
     }
-    setCart(cartProduct);
+    setCart(cartItems);
     document.addEventListener("updateCart", newHandle);
+  }
+
+  const updateCost = (items) => {
+    let initialCost = 0;
+    for (let i = 0; i < items.length; i++) {
+      initialCost += (items[i].cost * items[i].qty);
+    }
+    const finalCost = initialCost.toFixed(2);
+    setCost(finalCost);
   }
 
   const newHandle = function() {
     document.removeEventListener('updateCart', newHandle);
-    console.log('Atualizando carrinho...');
     updateCart();
   };
 
   useEffect(() => {
     document.addEventListener("updateCart", newHandle);
-    setCart(cartProduct());
+    updateCart();
   }, [])
+
+  useEffect(() => {
+    updateCost(cart);
+  }, [cart]);
 
   return (
     <>
@@ -58,6 +70,7 @@ function CartItem() {
               <Divider variant="inset" component="li" />
             </div>
           ))}
+          <h6>R${cost}</h6>
         </>
         : <p>Seu carrinho está vazio.</p>
       }
