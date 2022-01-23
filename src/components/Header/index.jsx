@@ -64,7 +64,7 @@ function Header() {
             </div>
             <div className="header-right-content">
               <IconButton aria-label="cart" onClick={handleClick}>
-                <StyledBadge className='header-badge' badgeContent={count} color="success">
+                <StyledBadge className='header-badge' badgeContent={count} color="success" showZero>
                   <ShoppingCartIcon className='header-cart' />
                 </StyledBadge>
               </IconButton>

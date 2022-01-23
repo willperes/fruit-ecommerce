@@ -26,7 +26,9 @@
 @media screen and (max-width: 1009px) {
   .shopping-cart {
     .shopping-cart-content {
-      top: 9rem;
+      top: 7rem;
+      left: 50%;
+  transform: translate(-50%);
       width: 15rem;
     }
   }
@@ -36,6 +38,7 @@
   .shopping-cart {
     .shopping-cart-content {
       top: 6rem;
+      right: 0;
     }
   }
 }
