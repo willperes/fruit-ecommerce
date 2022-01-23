@@ -43,8 +43,8 @@ function Footer() {
         <ul>
           <li><h5>Baixe nosso aplicativo</h5></li>
           <li><div className="footer-icon-wrapper">
-            <li><FaGooglePlay className='footer-icon' /></li>
-            <li><FaApple className='footer-icon' /></li>
+            <FaGooglePlay className='footer-icon' />
+            <FaApple className='footer-icon' />
           </div></li>
         </ul>
       </div>
