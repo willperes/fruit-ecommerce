@@ -107,11 +107,14 @@ function ProductCard() {
           <div className="product-card-popup">
             <Card className='product-card-popup-content' sx={{ minWidth: 275 }}>
               <CardContent>
-                <Typography variant='h5'>
+                <Typography variant='h4'>
                   {product.name}
                 </Typography>
+                <Typography variant='h5'>
+                  Valores nutricionais
+                </Typography>
                 <Typography variant='h6'>
-                  Valores nutricionais:
+                  (porção de 100g)
                 </Typography>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary">
                   Calorias: {product.nutritions.calories}
