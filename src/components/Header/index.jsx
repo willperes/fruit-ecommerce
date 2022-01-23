@@ -1,31 +1,60 @@
-import Logo from '../../assets/images/Header/logo.png';
-import CartIcon from '../../assets/images/Header/cart-icon.svg';
+import { useState } from 'react';
+
+import { GiGreenhouse } from 'react-icons/gi';
+import { IconContext } from "react-icons";
+
+import IconButton from '@mui/material/IconButton';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Badge from '@mui/material/Badge';
+import { styled } from '@mui/material/styles';
 
 import './styles.scss';
+import Cart from '../Cart';
 
 function Header() {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen((prev) => !prev);
+  };
+
+  const StyledBadge = styled(Badge)(({ theme }) => ({
+    '& .MuiBadge-badge': {
+      padding: '0 4px',
+    },
+  }));
+
   return (
-    <header>
-      <div className="header-wrapper">
-        <ul>
-          <li>
+    <>
+      <header>
+        <div className="header-wrapper">
+          <div className="header-content">
             <div className="header-left-content">
-              <a className='header-logo' href="https://www.flaticon.com/free-icons/food-and-restaurant" title="food and restaurant icons"><img src={Logo} alt="FruitHouse logo" /></a>
-              <p>FruitHouse</p>
+              <IconContext.Provider value={{ color: "white" }} >
+                <GiGreenhouse className='header-logo' />
+              </IconContext.Provider>
             </div>
-            <div className="header-mid-content">
+            <div className="header-text-buttons">
               <a href="#">Início</a>
               <a href="#">Produtos</a>
               <a href="#">Perguntas frequentes</a>
             </div>
             <div className="header-right-content">
-              <img src={CartIcon} alt="Ícone de um carrinho de compras" />
-              <a href="#">Carrinho (0)</a>
+              <IconButton aria-label="cart" onClick={handleClick}>
+                <StyledBadge className='header-badge' badgeContent={5} color="success">
+                  <ShoppingCartIcon className='header-cart' />
+                </StyledBadge>
+              </IconButton>
             </div>
-          </li>
-        </ul>
-      </div>
-    </header>
+          </div>
+        </div>
+      </header>
+      {
+        open ? (
+          <Cart />
+        ) : null
+      }
+    </>
   )
 }
 

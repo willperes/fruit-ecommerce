@@ -33,7 +33,7 @@ function CartItem() {
     setCost(finalCost);
   }
 
-  const newHandle = function() {
+  const newHandle = function () {
     document.removeEventListener('updateCart', newHandle);
     updateCart();
   };
@@ -49,8 +49,7 @@ function CartItem() {
 
   return (
     <>
-      {cart
-        ?
+      {cart && (
         <>
           {cart.map(item => (
             <div className='shopping-cart-item' key={item.id}>
@@ -72,8 +71,7 @@ function CartItem() {
           ))}
           <h6>R${cost}</h6>
         </>
-        : <p>Seu carrinho está vazio.</p>
-      }
+      )}
     </>
   )
 }

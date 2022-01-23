@@ -1,21 +1,23 @@
 .shopping-cart {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  padding-right: 2rem;
-  top: 6rem;
-  left: auto;
-  right: 5rem;
-  height: 50vh;
-  width: 20rem;
-  background-color: white;
-  z-index: 3000;
-  overflow: auto;
+  .shopping-cart-content {
+    height: fit-content;
+    max-height: 60vh;
+    width: 20rem;
+    position: fixed;
+    top: 6rem;
+    right: 1rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+    background-color: white;
+    z-index: 3000;
+    overflow: auto;
 
-  h6 {
-    text-align: center;
-    margin-left: 2rem;
-    margin-top: 1.5rem;
-    font-size: 1.25rem;
+    h6 {
+      text-align: center;
+      margin-left: 1rem;
+      margin-top: 1.5rem;
+      font-size: 1.25rem;
+    }
   }
 }

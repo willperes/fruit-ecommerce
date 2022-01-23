@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import ProductAmount from '../ProductAmount';
 import addToCart from '../../utils/addToCart';
 import fetchProducts from '../../utils/fetchProducts';
 import fetchFruits from '../../utils/fetchFruits';
@@ -68,12 +67,12 @@ function ProductCard() {
                         R${getFruitCost(product.id)}
                       </Typography>
                     </div>
-                    <ProductAmount />
                   </div>
-                  <Button className='product-card-button' variant="contained">Valores nutricionais</Button>
+                  <Button className='product-card-button' variant="contained" color="primary">Valores nutricionais</Button>
                   <Button 
                     className='product-add-cart-button'
                     variant="contained"
+                    color="primary"
                     onClick={() => {
                       addToCart(product);
                     }}

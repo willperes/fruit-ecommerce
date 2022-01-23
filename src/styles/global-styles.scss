@@ -5,8 +5,11 @@
   --max-width            : 1200px;
   --max-width-small      : 900px;
   --max-width-extra-small: 600px;
-  --color-green-main     : #2e7d32;
+  --background-color: #E7EBF0;
+  --color-green-main     : #3ba540;
   --color-green-light    : #4caf50;
+  --color-green-darker: #2c7e30;
+  --header-color: rgb(230, 230, 230);
 }
 
 * {
@@ -69,4 +72,5 @@ p {
 
 a {
   text-decoration: none;
+  color: white;
 }
