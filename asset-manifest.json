@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/fruit-ecommerce/static/css/main.39be1f58.css",
+    "main.css": "/fruit-ecommerce/static/css/main.6ec19ffb.css",
     "main.js": "/fruit-ecommerce/static/js/main.562b7231.js",
     "static/media/main-bg.jpg": "/fruit-ecommerce/static/media/main-bg.c077ea5ab5c84b806c65.jpg",
     "index.html": "/fruit-ecommerce/index.html",
-    "main.39be1f58.css.map": "/fruit-ecommerce/static/css/main.39be1f58.css.map",
+    "main.6ec19ffb.css.map": "/fruit-ecommerce/static/css/main.6ec19ffb.css.map",
     "main.562b7231.js.map": "/fruit-ecommerce/static/js/main.562b7231.js.map"
   },
   "entrypoints": [
-    "static/css/main.39be1f58.css",
+    "static/css/main.6ec19ffb.css",
     "static/js/main.562b7231.js"
   ]
 }
