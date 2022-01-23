@@ -5,6 +5,8 @@ footer {
   background-size: cover;
 
   .footer-wrapper {
+    max-width: var(--max-width-large);
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     justify-items: center;
@@ -15,6 +17,8 @@ footer {
       color: white;
 
       li {
+        margin-bottom: .25rem;
+
         .footer-icon {
           width: auto;
           height: 2rem;
@@ -44,10 +48,29 @@ footer {
           text-shadow: 0 1px 2px black;
         }
 
-        p {
+        a {
           font-size: 1rem;
+          color: white;
+          text-decoration: none;
         }
       }
     }
   }
 }
+
+@media screen and (max-width: 899px) {
+  footer {
+    .footer-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+
+      ul {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+

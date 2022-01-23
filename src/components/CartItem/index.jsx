@@ -21,7 +21,7 @@ function CartItem() {
       cartItems = JSON.parse(localStorage.getItem('cartProducts'));
     }
     setCart(cartItems);
-    document.addEventListener("updateCart", newHandle);
+    document.addEventListener("updateCart", handleEvent);
   }
 
   const updateCost = (items) => {
@@ -33,13 +33,13 @@ function CartItem() {
     setCost(finalCost);
   }
 
-  const newHandle = function () {
-    document.removeEventListener('updateCart', newHandle);
+  const handleEvent = function () {
+    document.removeEventListener('updateCart', handleEvent);
     updateCart();
   };
 
   useEffect(() => {
-    document.addEventListener("updateCart", newHandle);
+    document.addEventListener("updateCart", handleEvent);
     updateCart();
   }, [])
 

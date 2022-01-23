@@ -37,3 +37,13 @@
     }
   }
 }
+
+@media screen and (max-width: 599px) {
+  .products {
+    .product-cards {
+      margin: 0 auto;
+      max-width: var(--max-width-ultra-small);
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { GiGreenhouse } from 'react-icons/gi';
 import { IconContext } from "react-icons";
@@ -13,16 +13,39 @@ import Cart from '../Cart';
 
 function Header() {
   const [open, setOpen] = useState(false);
+  const [count, setCount] = useState();
 
   const handleClick = () => {
     setOpen((prev) => !prev);
   };
 
-  const StyledBadge = styled(Badge)(({ theme }) => ({
+  const handleEvent = function () {
+    document.removeEventListener('updateCart', handleEvent);
+    updateCount();
+  };
+
+  const StyledBadge = styled(Badge)(() => ({
     '& .MuiBadge-badge': {
       padding: '0 4px',
     },
   }));
+
+  /*
+    Atualizar a contagem do badge do carrinho com a quantidade de items que estão presentes no carrinho.
+  */
+  const updateCount = () => {
+    let cartItems = [];
+    if (localStorage.hasOwnProperty('cartProducts')) {
+      cartItems = JSON.parse(localStorage.getItem('cartProducts'));
+    }
+    setCount(cartItems.length);
+    document.addEventListener("updateCart", handleEvent);
+  }
+
+  useEffect(() => {
+    document.addEventListener("updateCart", handleEvent);
+    updateCount();
+  }, [])
 
   return (
     <>
@@ -41,7 +64,7 @@ function Header() {
             </div>
             <div className="header-right-content">
               <IconButton aria-label="cart" onClick={handleClick}>
-                <StyledBadge className='header-badge' badgeContent={5} color="success">
+                <StyledBadge className='header-badge' badgeContent={count} color="success">
                   <ShoppingCartIcon className='header-cart' />
                 </StyledBadge>
               </IconButton>

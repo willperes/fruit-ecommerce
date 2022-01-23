@@ -15,10 +15,6 @@ header {
       display: flex;
       justify-content: space-between;
 
-      a {
-        color: white;
-      }
-
       .header-left-content {
         display: flex;
         justify-content: center;
@@ -43,9 +39,11 @@ header {
         align-items: center;
 
         a {
-          padding: 1.65rem;
+          margin-top: .1rem;
+          padding: 1.6rem;
           font-weight: 500;
           color: rgba(255, 255, 255, 0.8);
+          text-decoration: none;
           transition: all .3s ease;
         }
 
@@ -70,6 +68,7 @@ header {
         a { 
           width: 6em;
         }
+
         img {
           width: 2em;
           height: 1.5rem;
@@ -79,6 +78,72 @@ header {
 
       .header-right-content:hover {
         transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1009px) {
+  header {
+    height: 8rem;
+
+    .header-wrapper {
+      .header-content {
+        justify-content: center;
+        flex-direction: column;
+
+        .header-left-content {
+          .header-logo {
+            width: auto;
+            height: 3rem;
+            margin-left: 0rem;
+            margin-top: .75rem;
+          }
+        }
+
+        .header-text-buttons {
+          display: none;
+        }
+
+        .header-right-content {
+          display: flex;
+          justify-content: center;
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 400px),
+       screen and (max-width: 1009px) {
+  header {
+    height: 6rem;
+
+    .header-wrapper {
+      .header-content {
+        justify-content: center;
+        flex-direction: column;
+
+        .header-left-content {
+          .header-logo {
+            width: auto;
+            height: 2.5rem;
+            margin-left: 0rem;
+            margin-top: .75rem;
+          }
+        }
+
+        .header-text-buttons {
+          display: none;
+        }
+
+        .header-right-content {
+          display: flex;
+          justify-content: center;
+          margin-right: .5rem;
+          margin-top: 0.25rem;
+        }
       }
     }
   }

@@ -27,18 +27,19 @@ function Footer() {
         </ul>
         <ul>
           <li><h5>Formas de pagamento</h5></li>
+          <li><h6>Cartão de Crédito</h6></li>
           <li><div className='footer-payment-card'>
             <FaCcVisa className='footer-icon' />
             <FaCcMastercard className='footer-icon' />
             <FaCcStripe className='footer-icon' />
             <FaCcPaypal className='footer-icon' />
           </div></li>
-          <li><h6>Cartão de Crédito</h6></li>
+          <li><h6>Boleto Bancário</h6></li>
           <li><RiBillFill className='footer-icon' /></li>
-          <li><p>Pague em até 6x</p></li>
-          <li><p>Confira as condições</p></li>
-          <li><h6>Cartão de Crédito</h6></li>
-          <li><p>À vista com 3% de desconto em produtos</p></li>
+          <li><a href="#">Pague em até 6x</a></li>
+          <li><a href="#">Confira as condições</a></li>
+          <li><h6>Boleto Antecipado</h6></li>
+          <li><a href="#">À vista com 3% de desconto em produtos</a></li>
         </ul>
         <ul>
           <li><h5>Baixe nosso aplicativo</h5></li>

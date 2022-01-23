@@ -5,6 +5,7 @@
   --max-width            : 1200px;
   --max-width-small      : 900px;
   --max-width-extra-small: 600px;
+  --max-width-ultra-small: 525px;
   --background-color: #E7EBF0;
   --color-green-main     : #3ba540;
   --color-green-light    : #4caf50;
@@ -18,7 +19,7 @@
 }
 
 html {
-  font-size  : 62, 5%;
+  font-size  : 100%;
   font-family: 'Rubik', sans-serif;
 }
 
@@ -68,9 +69,5 @@ h6 {
 
 p {
   font-size: 1.5em;
-}
-
-a {
-  text-decoration: none;
-  color: white;
+  font-family: 'Rubik', sans-serif;
 }
