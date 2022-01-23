@@ -53,8 +53,9 @@ $ npm start
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - [React](https://pt-br.reactjs.org/)
-- [Material.UI](https://mui.com/)
 - [Sass](https://sass-lang.com/)
+- [Material.UI](https://mui.com/)
+- [React-Scroll](https://github.com/fisshy/react-scroll)
 
 <br>
 
