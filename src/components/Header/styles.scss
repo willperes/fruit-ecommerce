@@ -38,16 +38,20 @@ header {
         justify-content: center;
         align-items: center;
 
-        a {
+        button {
           margin-top: .1rem;
           padding: 1.6rem;
           font-weight: 500;
+          font-size: 1rem;
+          border: none;
           color: rgba(255, 255, 255, 0.8);
+          background-color: var(--color-green-main);
           text-decoration: none;
+          cursor: pointer;
           transition: all .3s ease;
         }
 
-        a:hover {
+        button:hover {
           color: white;
         }
       }
@@ -63,10 +67,6 @@ header {
           span {
             background-color: rgb(0, 112, 6);
           }
-        }
-
-        a { 
-          width: 6em;
         }
 
         img {

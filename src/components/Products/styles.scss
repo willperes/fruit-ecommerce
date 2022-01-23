@@ -8,6 +8,10 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
     padding-top: 5rem;
+
+    .products-scroll-button {
+      background-color: var(--color-green-main);
+    }
   }
 }
 

@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+import { Link } from 'react-scroll'
+
 import { GiGreenhouse } from 'react-icons/gi';
 import { IconContext } from "react-icons";
 
@@ -58,9 +60,9 @@ function Header() {
               </IconContext.Provider>
             </div>
             <div className="header-text-buttons">
-              <a href="#">Início</a>
-              <a href="#">Produtos</a>
-              <a href="#">Perguntas frequentes</a>
+              <Link to='hero' spy={true} smooth={true}><button>Início</button></Link>
+              <Link to='products' spy={true} smooth={true}><button>Produtos</button></Link>
+              <button>Perguntas frequentes</button>
             </div>
             <div className="header-right-content">
               <IconButton aria-label="cart" onClick={handleClick}>
