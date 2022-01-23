@@ -14,13 +14,13 @@
 - [x] Adicionar produtos ao carrinho
 - [x] Remover produtos do carrinho
 - [x] Atualizar o preço do carrinho de acordo com os produtos e suas quantidades
-- [ ] Exibir valores nutricionais dos produtos
+- [x] Exibir valores nutricionais dos produtos
 
 <br>
 
 # 📺Demonstração
 
-<p align="center">Ainda não foi feito o deploy para demonstração pois a plataforma ainda está em construção, em breve será disponibilizado um link.</p>
+<p align="center"><a href="https://willperes.github.io/fruit-ecommerce/">Clique aqui</a> para visualizar o deploy da aplicação.</p>
 
 <br>
 
