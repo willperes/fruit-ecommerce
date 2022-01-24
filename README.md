@@ -22,6 +22,8 @@
 
 <p align="center"><a href="https://willperes.github.io/fruit-ecommerce/">Clique aqui</a> para visualizar o deploy da aplicação.</p>
 
+![Screenshot of the website](https://i.imgur.com/fSCkO0f.png)
+
 <br>
 
 # 📝Pré-requisitos
