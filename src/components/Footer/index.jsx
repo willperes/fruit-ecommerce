@@ -1,5 +1,7 @@
-import { FaCcVisa, FaCcMastercard, FaCcStripe, FaCcPaypal, FaGooglePlay, FaApple } from 'react-icons/fa';
+import { FaCcVisa, FaCcMastercard, FaCcStripe, FaCcPaypal } from 'react-icons/fa';
 import { RiBillFill } from 'react-icons/ri';
+import GooglePlayBadge from '../../assets/images/Footer/googleplay-badge.svg';
+import AppStoreBadge from '../../assets/images/Footer/appstore-badge.svg';
 
 import './styles.scss';
 
@@ -44,8 +46,8 @@ function Footer() {
         <ul>
           <li><h5>Baixe nosso aplicativo</h5></li>
           <li><div className="footer-icon-wrapper">
-            <FaGooglePlay className='footer-icon' />
-            <FaApple className='footer-icon' />
+            <img src={GooglePlayBadge} alt="Google Play download badge" />
+            <img src={AppStoreBadge} alt="App Store download badge" />
           </div></li>
         </ul>
       </div>

@@ -32,7 +32,20 @@ footer {
 
         .footer-icon-wrapper {
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
+          max-width: 8.5rem;
+
+          img {
+            width: auto;
+            height: 2.5rem;
+            margin-top: .5rem;
+            cursor: pointer;
+            transition: transform .3s ease;
+          }
+
+          img:hover {
+            transform: scale(1.05);
+          }
         }
 
         h5 {
@@ -69,6 +82,13 @@ footer {
 
       ul {
         margin-bottom: 1rem;
+
+        li {
+          .footer-icon-wrapper {
+            justify-content: center;
+            max-width: 20rem;
+          }
+        }
       }
     }
   }
