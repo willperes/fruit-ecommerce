@@ -71,6 +71,26 @@ footer {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  footer {
+    .footer-wrapper {
+      ul {
+        max-width: 16.5 rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  footer {
+    .footer-wrapper {
+      ul {
+        max-width: 15rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 899px) {
   footer {
     .footer-wrapper {
