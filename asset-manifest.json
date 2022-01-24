@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/fruit-ecommerce/static/css/main.6ec19ffb.css",
-    "main.js": "/fruit-ecommerce/static/js/main.562b7231.js",
-    "static/media/main-bg.jpg": "/fruit-ecommerce/static/media/main-bg.c077ea5ab5c84b806c65.jpg",
+    "main.css": "/fruit-ecommerce/static/css/main.1ebc8785.css",
+    "main.js": "/fruit-ecommerce/static/js/main.294916f4.js",
+    "static/media/main-bg.jpg": "/fruit-ecommerce/static/media/main-bg.20b6c4e379db35690da6.jpg",
+    "static/media/appstore-badge.svg": "/fruit-ecommerce/static/media/appstore-badge.e12af9573eb1bda8fc845103ea53d182.svg",
+    "static/media/googleplay-badge.svg": "/fruit-ecommerce/static/media/googleplay-badge.d6fa3f423cd95f36908703badfd34ac2.svg",
     "index.html": "/fruit-ecommerce/index.html",
-    "main.6ec19ffb.css.map": "/fruit-ecommerce/static/css/main.6ec19ffb.css.map",
-    "main.562b7231.js.map": "/fruit-ecommerce/static/js/main.562b7231.js.map"
+    "main.1ebc8785.css.map": "/fruit-ecommerce/static/css/main.1ebc8785.css.map",
+    "main.294916f4.js.map": "/fruit-ecommerce/static/js/main.294916f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ec19ffb.css",
-    "static/js/main.562b7231.js"
+    "static/css/main.1ebc8785.css",
+    "static/js/main.294916f4.js"
   ]
 }
